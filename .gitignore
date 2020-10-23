@@ -111,3 +111,5 @@ dist
 
 # Built JS bundles
 bundle.js
+
+/**/package-lock.json
