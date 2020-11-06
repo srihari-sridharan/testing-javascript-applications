@@ -10,6 +10,6 @@ test("generating a .txt report", () => {
   ];
 
   generateReport(inventory);
-  const report = fs.readFileSync("/tmp/report.txt", "utf-8");
+  const report = fs.readFileSync("report.txt", "utf-8");
   expect(report).toMatchSnapshot();
 });

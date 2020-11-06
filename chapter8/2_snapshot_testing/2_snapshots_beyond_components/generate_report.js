@@ -16,7 +16,7 @@ module.exports.generateReport = items => {
   }, 0);
 
   const content = lines.concat(`Total value: ${totalValue}`).join("\n");
-  fs.writeFileSync("/tmp/report.txt", content);
+  fs.writeFileSync("report.txt", content);
 };
 
 module.exports.generateReport(inventory);
