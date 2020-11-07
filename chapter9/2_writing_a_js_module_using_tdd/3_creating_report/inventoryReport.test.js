@@ -61,17 +61,17 @@ describe("createInventoryValuesReport", () => {
     ];
 
     createInventoryValuesReport(items);
-    expect(fs.readFileSync("/tmp/inventoryValues.csv", "utf8")).toBe(
+    expect(fs.readFileSync("inventoryValues.csv", "utf8")).toBe(
       "apple pie,3,15,45\ncheesecake,2,12,24\nmacaroon,20,3,60\nTotal,,,129"
     );
 
     createInventoryValuesReport(items.slice(1));
-    expect(fs.readFileSync("/tmp/inventoryValues.csv", "utf8")).toBe(
+    expect(fs.readFileSync("inventoryValues.csv", "utf8")).toBe(
       "cheesecake,2,12,24\nmacaroon,20,3,60\nTotal,,,84"
     );
 
     createInventoryValuesReport(items.slice(2));
-    expect(fs.readFileSync("/tmp/inventoryValues.csv", "utf8")).toBe(
+    expect(fs.readFileSync("inventoryValues.csv", "utf8")).toBe(
       "macaroon,20,3,60\nTotal,,,60"
     );
   });

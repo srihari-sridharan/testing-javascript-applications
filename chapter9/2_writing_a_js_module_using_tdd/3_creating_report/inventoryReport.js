@@ -17,7 +17,7 @@ const createInventoryValuesReport = items => {
   const itemRows = items.map(generateItemRow).join("\n");
   const totalRow = generateTotalRow(items);
   const reportContents = itemRows + "\n" + totalRow;
-  fs.writeFileSync("/tmp/inventoryValues.csv", reportContents);
+  fs.writeFileSync("inventoryValues.csv", reportContents);
 };
 
 module.exports = {
