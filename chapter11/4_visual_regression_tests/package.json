@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "NODE_ENV=development cypress open",
-    "cypress:run": "NODE_ENV=development percy exec -- cypress run"
+    "cypress:open": "set NODE_ENV=development&cypress open",
+    "cypress:run": "set NODE_ENV=development&percy exec -- cypress run"
   },
   "keywords": [],
   "author": "",

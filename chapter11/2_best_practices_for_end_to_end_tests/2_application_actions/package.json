@@ -4,15 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "NODE_ENV=development cypress open",
-    "cypress:run": "NODE_ENV=development cypress run"
+    "cypress:open": "set NODE_ENV=development&cypress open",
+    "cypress:run": "set NODE_ENV=development&cypress run"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^4.12.1",
-    "knex": "^0.20.13",
-    "sqlite3": "4.1.1"
+    "knex": "^0.20.15",
+    "sqlite3": "^4.1.1"
   }
 }
